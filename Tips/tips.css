@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Barriecito;
+    src: url(../fonts/Barriecito-Regular.ttf);
+}
+*{
+    transition: .3s;
+}
+
+body {
+    overflow-x: hidden;
+    color: white;
+    transition: 1s;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    z-index: 1111111111111111;
+}
+.progress-bar {
+    height: 5px;
+    width: 0%;
+}
+
+.headnav{
+    z-index:111;
+    margin-top: -10px;
+    background-color: #00416a;
+}
+.logo a {
+    text-decoration: none !important;
+    font-size:30px;
+    font-family: 'Barriecito';
+    transition: 1s;
+    color: white;
+}
+.sideNav_btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 3px;
+}
+.side_nav_btn_lines {
+    border: 1px solid white;
+    transform: scale(.6);
+}
+.side_nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    z-index: 111;
+    background-color: #00416a;
+    transform: translate(250px);
+}
+.side_nav_out {
+    transform: translate(0px);
+}
+
+.active {
+    background: yellowgreen;
+}
+
+.tipCard {
+    transition: .5s;
+}
+
+.bg_gradient {
+    background-image: linear-gradient(257deg,
+    hsl(0deg 0% 0%),
+    rgba(109, 16, 93, 0.993) 0%,
+    rgba(109, 16, 93, 0.993) 6%,
+    rgb(41, 18, 95),
+    rgb(25, 13, 54),
+    hsl(0deg 0% 0%),
+    hsl(0deg 0% 0%),
+    hsl(0deg 0% 0%),
+    hsl(0deg 0% 0%) 100%);
+    color: white;
+}
+
+.logo {
+    color: white;
+    font-size: 50px;
+    font-family: 'Barriecito';
+    transition: 1s;
+}
+
+
+.tip {
+    background: #00416A;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        font-size: 35px;
+    } 
+}

@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Barriecito;
+    src: url(fonts/Barriecito-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: sans-serif;
+   
+}
+
+.headnav{
+    position: fixed;
+    top: 0;
+    z-index:111;
+    padding: 10px 0;
+}
+.logo a {
+    text-decoration: none !important;
+    font-size:30px;
+    font-family: 'Barriecito';
+    transition: 1s;
+    color: white !important;
+}
+.scroll_headnav_active {
+    background: black;
+    padding: 0px !important;
+}
+.sideNav_btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 3px;
+}
+.side_nav_btn_lines {
+    border: 1px solid white;
+    transform: scale(.6);
+}
+
+
+.side_nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 230px;
+    z-index: 111;
+    background-color: black;
+    transform: translate(250px);
+}
+.side_nav_out {
+    transform: translate(0px);
+}
+.bg_gradient {
+    background-image: linear-gradient(147deg, #6d008fa2 10%, #00416a);
+}
+.cool_bg_text {
+    background-image: linear-gradient(47deg, rgb(140, 31, 230), rgb(226, 109, 0));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    z-index: 1111111111111111;
+}
+.progress-bar {
+    height: 5px;
+    width: 0%;
+}
+
+.frontPageNewsletter {
+    background: #00416A;
+    background-image: linear-gradient(257deg,
+            hsl(0deg 0% 0%),
+            rgb(79, 11, 105) 0%,
+            rgba(109, 16, 93, 0.993) 6%,
+            rgb(41, 18, 95),
+            rgb(25, 13, 54),
+            hsl(0deg 0% 0%),
+            hsl(0deg 0% 0%),
+            hsl(0deg 0% 0%),
+            hsl(0deg 0% 0%) 100%);
+    min-height: 100vh;
+    color: white; 
+}
+
+.frontPageNewsletter_head {
+    font-size: 65px;
+}
+
+.social_icons a {
+    text-decoration: none;
+}
+
+.social_icons svg {
+    margin: 1.5px;
+    width: 30px;
+    height: 30px;
+    color: grey;
+}
+
+.article_title_img {
+    transition: .1s;
+}
+
+.article_title_img:hover {
+    opacity: .8;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .frontPageNewsletter_head{
+        font-size: 35px;
+    }
+    .section1 {
+        padding: 120px 30px !important;
+    }
+}

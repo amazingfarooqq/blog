@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarooqTips</title>
+    <link rel="stylesheet" href="../links/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tips.css">
+
+</head>
+
+<body>
+
+    <div class="side_nav ">
+        <div style="margin-top: 90px;">
+            <a href="Tips/Tips.html" class="w-100 btn btn-dark" style="border-radius: 0px;">Tips</a>
+            <a href="#" class="w-100 btn btn-dark" style="border-radius: 0px;">Newsletter</a>
+            <a href="https://farooqdad.netlify.app/#" target="_blank" class="w-100 btn btn-dark"
+                style="border-radius: 0px;">Portfolio</a>
+            <a href="#" class="w-100 btn btn-dark" style="border-radius: 0px;">Articles</a>
+
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
+    <div class="container-fluid px-4 text-light px-md-5 headnav sticky-top">
+        <div class="row">
+            <h1 class="col logo m-2"> <a href="../index.html">FarooqTips</a> </h1>
+            <div class="col-1 text-light text-end" style="align-items: center;display: flex;">
+                <div class="row p-2 sideNav_btn">
+                    <div class="col-12 btn-light mt-1 side_nav_btn_lines"></div>
+                    <div class="col-12 btn-light mt-1 side_nav_btn_lines"></div>
+                    <div class="col-12 btn-light mt-1 side_nav_btn_lines"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-light text-center bg-dark p-5">
+        <div class="row py-4">
+            <h1 style="font-size: 60px;">One-Liner Tips</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+        <div class="row text-center">
+            <div class="col-12" id="stacks">
+                <button class="btn btn-dark fs-5" id="ALL" onclick="ALL()">ALL</button>
+                <button class="btn btn-dark fs-5" id="HTML_btn" onclick="HTML_tips()">HTML</button>
+                <button class="btn btn-dark fs-5" id="CSS_btn" onclick="CSS_tips()">CSS</button>
+                <button class="btn btn-dark fs-5" id="JAVASCRIPT_btn" onclick="JAVASCRIPT_tips()">JavaScript</button>
+            </div>
+        </div>
+        <div class="row py-3 justify-content-center">
+            <input type="text" class="col-6 fs-5" placeholder="search" id="search_tip_button">
+        </div>
+    </div>
+
+
+    <div class="container text-dark">
+        <div class="row tips" id="tips">
+
+        </div>
+    </div>
+
+
+
+    <script src="tips.js"></script>
+</body>
+
+</html>

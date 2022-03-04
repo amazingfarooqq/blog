@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="shortcut icon" href="farooq.jpg">
+    <link rel="stylesheet" href="../links/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styling.css">
+    <style>
+
+    </style>
+</head>
+
+<body class="text-light">
+
+    <div class="container-fluid px-4 py-3 text-light headnav">
+        <div class="row">
+            <h1 class="col logo text-light"> <a href="../index.html" style="text-decoration: none;color: white;">FarooqTips</a> </h1>
+            <div class="col-1 text-light text-end" style="align-items: center;display: flex;">
+                <div class="row" style="display: flex;flex-direction: column;cursor: pointer;">
+                    <div class="col-12 btn-light mt-1" style="border: 2px solid white;transform: scale(.8);"></div>
+                    <div class="col-12 btn-light mt-1" style="border: 2px solid white;transform: scale(.8);"></div>
+                    <div class="col-12 btn-light mt-1" style="border: 2px solid white;transform: scale(.8);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .article_title .row{
+            background-color: transparent;
+            /* margin: 30px 40px; */
+            margin-top: -140px;
+            margin-bottom: -10px;
+            border-radius: 5px;
+            
+        }
+    </style>
+    <div class="container-fluid article_title">
+        <div class="row bg_gradient py-4 mx-2 mx-md-5">
+            <h1 class="col-12 text-center py-5 fw-bold" style="font-family: Barriecito;font-size: 50px;">What is an API?
+                Real Life Example:</h1>
+
+        </div>
+    </div>
+
+    <div class="container text-dark fs-4 mt-3">
+        <div class="row px-3 justify-content-center">
+            <div class="col-10">
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <p class="f"> You are hungry and need something to eat</p>
+                        <p>You could go to Store, buy required grocery and cook it yourself but as you see, you have to
+                            do alot of thing's to accomplish it</p>
+                        <p> <b class="highlighted_text">Second option</b> is that you can get it from the restaurant</p>
+                        <p> Professional chefs will already have all the resources, but the chef don't want you
+                            to access all his stuff due <b class="highlighted_text">security and safety purpose</b>,
+                        </p>
+                        <p>That is where an intermediate is needed to provide allowed services from one place to
+                            another......</p>
+                        <p> That serving guy,( in another words 'API' ) who serve data from one place to another
+                            without letting us get into kichen where chef is making all his stuffs</p>
+                        <p> <b class="highlighted_text">API stands for application programming interface</b>, it is a
+                            software intermediary that allows
+                            twoapplications to talk to each other.</p>
+
+
+
+                        <p> One common application of API is Sign up on different sites with already created <b
+                                class="highlighted_text">Gmail or Facebook</b>, your data is already saved at one place
+                            and the app you use takes data from
+                            Gmail/Facebook as an API.</p>
+                        <p> API's are needed to bring applications together in order to perform a designed build around
+                            sharing data and executing pre-defined processes, Few popular API's is Google Maps</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function progressBarScroll() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+                height =
+                    document.documentElement.scrollHeight -
+                    document.documentElement.clientHeight,
+                scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        }
+
+        window.onscroll = function () {
+            progressBarScroll();
+        };
+
+    </script>
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
